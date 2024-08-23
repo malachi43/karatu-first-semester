@@ -17,12 +17,18 @@ nav ul li {
   /* border: 1px solid grey; */
   padding: 8px 16px;
   color: black;
+  border-inline-end: 1px solid black;
+}
+
+nav ul li:last-child {
+  border-inline-end: none;
 }
 
 nav ul li a {
   text-decoration: none;
   text-transform: lowercase;
   color: blue;
+  text-align: center;
   font-weight: 300;
 }
 
@@ -81,6 +87,12 @@ a#to-top {
 
   nav ul li {
     margin: 10px;
+    border-inline-end: 1px solid black;
+    border-block-end: 1px solid black;
+  }
+
+  nav ul li:last-child {
+    border-inline-end: 1px solid black;
   }
 
   p {
