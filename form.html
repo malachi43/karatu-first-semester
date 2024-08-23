@@ -1,0 +1,131 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <header>
+      <h3><a href="./index.html">Back home</a></h3>
+      <h3>Already an AltSchooler? <a href="#">Sign In!</a></h3>
+    </header>
+
+    <main id="main">
+      <section>
+        <div>
+          <img
+            src="https://portal.altschoolafrica.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Ftalentql-inc%2Fimage%2Fupload%2Fv1703728439%2Fstudent-portal%2Facademic_zzg4hi.png&w=640&q=75"
+            alt="kits for learning"
+          />
+        </div>
+        <p id="motto">Learn highly sought after skills without hassle.</p>
+        <p>Tel:0800ALTSCHOOL</p>
+        <footer>&copy;2024 AltSchool Africa. All rights reserved.</footer>
+      </section>
+
+      <section id="signup">
+        <h2>Signup</h2>
+        <p>Take the next steps to apply at AltSchool Africa</p>
+
+        <div class="field">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" placeholder="Enter first name" />
+        </div>
+
+        <div class="field">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" placeholder="Enter last name" />
+        </div>
+
+        <div class="field">
+          <label for="gender">Gender</label>
+          <input list="genders" id="gender" placeholder="Select gender" />
+
+          <datalist id="genders">
+            <option value="male"></option>
+            <option value="female"></option>
+          </datalist>
+        </div>
+
+        <div class="field">
+          <label for="dob">Date of birth</label>
+          <input type="date" id="dob" placeholder="mm/dd/yy" />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter email address" />
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="08154387000" />
+        </div>
+
+        <div class="field">
+          <label for="country">Country</label>
+          <input
+            list="countries"
+            id="country"
+            placeholder="Select your country"
+          />
+
+          <datalist id="countries">
+            <option value="Afghanistan"></option>
+            <option value="Albania"></option>
+            <option value="Algeria"></option>
+            <option value="Andorra"></option>
+            <option value="Nigeria"></option>
+          </datalist>
+        </div>
+
+        <div class="field">
+          <label for="residence">State/City of Residence</label>
+          <input
+            type="text"
+            id="residence"
+            placeholder="Enter your state of residence"
+          />
+        </div>
+
+        <div class="field" id="platform">
+          <label for="channel">How did you hear about us?</label>
+          <input list="channels" id="channel" placeholder="Select channel" />
+
+          <datalist id="channels">
+            <option value="Twitter"></option>
+            <option value="Facebook"></option>
+            <option value="Linkedin"></option>
+            <option value="Youtube"></option>
+            <option value="Friend"></option>
+            <option value="Whatsapp"></option>
+            <option value="Instagram"></option>
+            <option value=" Bill Board"></option>
+          </datalist>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+        </div>
+
+        <div class="field">
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm_password"
+            placeholder="Enter password again"
+          />
+        </div>
+
+        <p id="policy">
+          By clicking continue, I agree to <a href="">Terms of Use </a> and
+          acknowledge that I have read the <a href=""> Privacy Policy.</a>
+        </p>
+
+        <button type="button">Sumbit <span id="farr">&rarr;</span></button>
+      </section>
+    </main>
+  </body>
+</html>
