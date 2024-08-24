@@ -1,5 +1,6 @@
 body {
   margin-inline: auto;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
   width: 100vh;
@@ -22,6 +23,7 @@ nav ul li {
   list-style-type: none;
   border: 1px solid grey;
   padding: 8px 16px;
+  margin-inline-start: 0px;
 }
 
 nav ul li a {

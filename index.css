@@ -74,6 +74,10 @@ a#to-top {
 }
 
 @media (max-width: 768px) {
+  body {
+    margin: 3px;
+  }
+
   nav ul {
     display: flex;
     flex-direction: column;
