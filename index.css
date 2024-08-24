@@ -74,7 +74,7 @@ a#to-top {
 }
 
 @media (max-width: 768px) {
-  body {
+  body,section {
     margin: 3px;
   }
 
