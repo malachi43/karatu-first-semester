@@ -76,6 +76,7 @@ a#to-top {
 @media (max-width: 768px) {
   body,section {
     margin: 3px;
+    padding-block: 10px;
   }
 
   nav ul {
