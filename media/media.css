@@ -4,7 +4,6 @@ body {
   font-size: 100%;
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
-  max-width: 100wv;
 }
 
 header {
@@ -69,7 +68,7 @@ main section div p {
 }
 
 div#picture-frame img {
-  max-width: 400px;
+  max-width: 300px;
   height: 250px;
   border-radius: 5px;
   border: 1px solid black;
@@ -77,8 +76,21 @@ div#picture-frame img {
   object-fit: cover;
 }
 
+main p {
+  font-weight: 800;
+  font-size: larger;
+  font-style: normal;
+}
+
+section#videos div {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  max-width: 500px;
+
+}
 section#videos div video {
-  max-width: 400px;
+  max-width: 300px;
   height: 250px;
   border-radius: 5px;
   border: 1px solid black;
@@ -92,14 +104,13 @@ section {
   margin-block: 20px;
 }
 
+
 section#videos div p {
   text-align: center;
   font-weight: 600;
 }
 
-/* picture source {
-  width: inherit;
-} */
+
 
 main > section > div p {
   text-align: center;
@@ -108,11 +119,29 @@ main > section > div p {
 span#audio-title {
   font-style: italic;
 }
+
 @media (max-width: 768px) {
   main section {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
     gap: 25px;
+  }
+ 
+  section div {
+    width: 300px;
+  }
+
+  div#picture {
+    margin: 0 auto;
+  }
+
+  div#picture-frame img {
+    width: 100%;
+    object-fit: cover;
+  }
+  section#videos div video {
+    width: fit-content;
+    margin: 0 auto;
   }
 }
